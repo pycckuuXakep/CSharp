@@ -22,8 +22,7 @@ namespace Practice_6 {
             int n = Convert.ToInt32(Console.ReadLine());
             int k = Convert.ToInt32(Console.ReadLine());
             int i = 0;
-            while(++i*k <= n);
-            i--;
+            while(++i*k <= n); i--;
             Console.WriteLine($"{n} / {k} = {i} \n" +
                               $"{n} / {k} = {n - i*k}");
         }
