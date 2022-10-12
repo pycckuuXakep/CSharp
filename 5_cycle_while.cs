@@ -1,3 +1,4 @@
+/* A little bit of my pervert fantasy. */
 static void second() {
     int num = 2; int sum = 1;
     while(num * 5 != sum) sum += num++;
