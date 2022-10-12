@@ -27,8 +27,7 @@ namespace Practice_6 {
 
         static void fifth() {
             int n = Convert.ToInt32(Console.ReadLine());
-            int k = 0;
-            int sum = 0;
+            int k = 0; int sum = 0;
             while(sum <= n) sum += ++k;
             Console.WriteLine($"K = {k}, SUM = {sum}");
         }
