@@ -7,10 +7,7 @@ namespace Practice_6 {
         static void second() {
             int number = 2;
             int sum = 1;
-            while(number * 5 != sum) {
-                sum += number;
-                ++number;
-            }
+            while(number * 5 != sum) sum += number++;
             Console.WriteLine(number);
         }
 
@@ -25,12 +22,10 @@ namespace Practice_6 {
             int n = Convert.ToInt32(Console.ReadLine());
             int k = Convert.ToInt32(Console.ReadLine());
             int i = 0;
-            while(n >= k) {
-                n -= k;
-                i++;
-            }
-            Console.WriteLine($"{n+i*k} / {k} = {i} \n" +
-                              $"{n+i*k} / {k} = {n}");
+            while(++i*k <= n);
+            i--;
+            Console.WriteLine($"{n} / {k} = {i} \n" +
+                              $"{n} / {k} = {n - i*k}");
         }
 
         static void fifth() {
