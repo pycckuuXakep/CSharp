@@ -1,4 +1,22 @@
 /* A little bit of my pervert fantasy. */
+static void first()
+{
+    Console.WriteLine("[FIRST]");
+    Console.WriteLine("This function evaluate special equation.");
+    Console.Write("Give me N: ");
+    int N = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Give me x: ");
+    int x = Convert.ToInt32(Console.ReadLine());
+    int i = 1;
+    double sum = 1;
+    while (i <= N)
+    {
+        sum += Math.Pow(-1, i) * Math.Pow(x, i) / fact(i);
+        i++;
+    }
+    Console.WriteLine("Answer: " + sum);
+    Console.WriteLine();
+}
 static void second() {
     int num = 2; int sum = 1;
     while(num * 5 != sum) sum += num++;
