@@ -29,6 +29,7 @@ static void second()
         Console.WriteLine();
     }
     Console.WriteLine();
+
 }
 
 static void third()
@@ -36,21 +37,25 @@ static void third()
     for(int i = 1; i<=9; i++)
     {
         for (int k = 1; k <= 9; k++)
-        {
             Console.WriteLine($"{i} * {k} = {i * k}");
-        }
         Console.WriteLine();
     }
     Console.WriteLine();
+
 }
 
 static void fourth()
 {
     Console.Write("Give me height of rect: ");
     int n = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine("+++++++");
-    for (int i = 1; i <= n; i++)
-        Console.WriteLine("+*****+");
-    Console.WriteLine("+++++++");
+    Console.WriteLine("++++++++");
+    for (int i = 1; i <= n; i++) {
+        Console.Write("+");
+        for (int k = 1; k <= 6; k++)
+            Console.Write("*");
+        Console.WriteLine("+");
+    }
+    Console.WriteLine("++++++++");
     Console.WriteLine();
+
 }
