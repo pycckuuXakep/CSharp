@@ -46,14 +46,22 @@
         {
             Console.Write("Give me height of rect: ");
             int n = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("++++++++");
+            Console.Write("Give me width of rect: ");
+            int m = Convert.ToInt32(Console.ReadLine());
+            Console.Write("+");
+            for (int i = 1; i <= m; i++)
+                Console.Write("+");
+            Console.WriteLine("+");
             for (int i = 1; i <= n; i++) {
                 Console.Write("+");
-                for (int k = 1; k <= 6; k++)
+                for (int k = 1; k <= m; k++)
                     Console.Write("*");
                 Console.WriteLine("+");
             }
-            Console.WriteLine("++++++++");
+            Console.Write("+");
+            for (int i = 1; i <= m; i++)
+                Console.Write("+");
+            Console.WriteLine("+");
             Console.WriteLine();
 
         }
